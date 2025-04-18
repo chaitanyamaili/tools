@@ -1,5 +1,4 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Base64Tool } from './components/Base64Tool';
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-2xl font-bold mb-4">Dev Tools</h1>
+      <h1 className="text-2xl font-bold mb-4">Dev Tools Portal</h1>
       <Base64Tool />
     </div>
   );
