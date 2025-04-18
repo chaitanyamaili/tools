@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 declare global {
   interface Window {
@@ -16,11 +16,21 @@ export const Base64Tool = () => {
   };
 
   return (
-    <div>
-      <h2>🔢 Base64 Encoder</h2>
-      <input value={input} onChange={(e) => setInput(e.target.value)} />
-      <button onClick={handleEncode}>Encode</button>
-      <p>Result: {encoded}</p>
+    <div className="p-4 border rounded-xl shadow mb-4">
+      <h2 className="text-xl font-semibold mb-2">🔢 Base64 Encoder</h2>
+      <input
+        className="border p-2 rounded w-full mb-2"
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Enter text to encode"
+      />
+      <button
+        className="bg-blue-500 text-white px-4 py-2 rounded"
+        onClick={handleEncode}
+      >
+        Encode
+      </button>
+      <p className="mt-2 break-all">Result: {encoded}</p>
     </div>
   );
 };
