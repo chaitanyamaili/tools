@@ -25,4 +25,4 @@ go.work.sum
 .env
 
 # Ignore the following files and directories
-node_modules/.cache/gh-pages
+node_modules
