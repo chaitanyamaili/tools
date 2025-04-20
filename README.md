@@ -9,7 +9,9 @@ A lightweight web app offering essential tools for developers. Built with **Reac
 - 📦 JSON Formatter / Validator
 - 🔢 Base64 Encode/Decode
 - 🔐 Hash Generators (MD5, SHA256)
-- 🆔 UUID Generator (coming soon)
+- 🆔 UUID Generator (Mutiple UUID Generator)
+- 🌙 Dark/Light mode toggle
+- ⌨️ Keyboard Shortcuts for Tools
 
 ### 🚀 Live Demo
 
