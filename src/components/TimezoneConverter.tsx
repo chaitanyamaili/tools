@@ -18,30 +18,30 @@ export const TimezoneConverter = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-white shadow p-4 rounded">
+    <div className="max-w-xl mx-auto bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow p-4 rounded">
       <h2 className="text-xl font-semibold mb-4">🕒 Timezone Converter</h2>
       <input
         type="datetime-local"
         value={inputTime}
         onChange={(e) => setInputTime(e.target.value)}
-        className="w-full mb-2 p-2 border rounded"
+        className="w-full p-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded"
       />
-      <div className="flex gap-2 mb-2">
-        <input
-          value={fromZone}
-          onChange={(e) => setFromZone(e.target.value)}
-          placeholder="From (e.g., UTC)"
-          className="flex-1 p-2 border rounded"
-        />
+      <div className="flex flex-wrap gap-2 mb-2">
+      <input
+        value={fromZone}
+        onChange={(e) => setFromZone(e.target.value)}
+        placeholder="From (e.g., UTC)"
+        className="flex-1 p-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded"
+      />
         <input
           value={toZone}
           onChange={(e) => setToZone(e.target.value)}
           placeholder="To (e.g., Asia/Kolkata)"
-          className="flex-1 p-2 border rounded"
+          className="flex-1 p-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded"
         />
       </div>
       <button onClick={convert} className="bg-blue-600 text-white px-4 py-1 rounded">Convert</button>
-      <div className="mt-4 p-2 bg-gray-100 rounded">{converted}</div>
+      <div className="mt-4 p-2 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded">{converted}</div>
     </div>
   );
 };

@@ -13,10 +13,10 @@ export const HashGenerator = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-white shadow p-4 rounded">
+    <div className="max-w-xl mx-auto bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow p-4 rounded">
       <h2 className="text-xl font-semibold mb-4">🔐 Hash Generator (MD5 / SHA256)</h2>
       <textarea
-        className="w-full p-2 border rounded mb-2"
+        className="w-full p-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded"
         rows={4}
         value={input}
         onChange={(e) => setInput(e.target.value)}
@@ -26,11 +26,11 @@ export const HashGenerator = () => {
       <div className="mt-4">
         <div className="mb-2">
           <strong>MD5:</strong>
-          <pre className="bg-gray-100 p-2 rounded break-words">{md5Hash}</pre>
+          <pre className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 p-2 rounded break-words">{md5Hash}</pre>
         </div>
         <div>
           <strong>SHA256:</strong>
-          <pre className="bg-gray-100 p-2 rounded break-words">{sha256Hash}</pre>
+          <pre className="bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 p-2 rounded break-words">{sha256Hash}</pre>
         </div>
       </div>
     </div>
