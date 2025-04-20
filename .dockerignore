@@ -1,0 +1,30 @@
+# Node modules and production builds
+node_modules
+build
+dist
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Git
+.git
+.gitignore
+
+# OS & editor files
+.DS_Store
+.env
+*.swp
+*.swo
+.vscode
+.idea
+
+# Tests
+coverage
+__tests__
+
+# Docker-related files (optional)
+docker-compose.yml
+Dockerfile*
+.dockerignore
